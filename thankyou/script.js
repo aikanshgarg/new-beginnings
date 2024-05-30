@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=Ecy-xsBqCcQ&t=21s
+
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", function() {
