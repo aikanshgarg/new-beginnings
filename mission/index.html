@@ -15,9 +15,9 @@
 <body>
     <div id="main">
         <div class="nav">
-          <a href="/">home</a>
-          <span id="our" href="/">Procure. Pay. Close.</span>
-          <a href="https://aikanshgarg.github.io/" target="_blank">
+          <a href="https://aikanshgarg.github.io/new-beginnings/thankyou/">home</a>
+          <span id="our">Procure. Pay. Close.</span>
+          <a href="https://aikanshgarg.github.io/" target="_blank" class="aikansh">
             Aikansh.
           </a>
         </div>
@@ -37,10 +37,20 @@
             <div class="dot"></div>
           </div>
         </div>
+
         <div class="img-div">
-          <div class="img"></div>
+            <div class="img">
+                <video class="img" id="myVideo" controls loop>
+                    <source src="./video.mp4" type="video/mp4">
+                    Sorry your browser is old!!!
+                </video>
+            </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <h2>Spendlightenment.</h2>
+    </footer>
 
   <script src="../script-confetti.js"></script>
 
@@ -48,5 +58,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   
   <script src="./script.js"></script>
+
+    <!-- <script>
+        let options = {
+            root:null,
+            rootMargin:'0px',
+            threshold:1.0
+        };
+
+        let callback = (entries, observer)=>{
+            entries.forEach(entry => {
+                if(entry.target.id == 'myVideo')
+                {
+                    if(entry.isIntersecting){
+                        entry.target.play();
+                    }
+                    else{
+                        entry.target.pause();
+                    }
+                }
+            });
+        }
+        
+        let observer = new IntersectionObserver(callback, options);
+        observer.observe(document.querySelector('#myVideo'));
+    </script> -->
 </body>
 </html>

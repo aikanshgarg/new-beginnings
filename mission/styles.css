@@ -3,7 +3,6 @@
     --color-airbase: #FF6448;;
     --color-footer: hsla(200deg, 100%, 85%, 0.1);
     --color-link: #4DAA57;
-    --color-darkblack: #232323;
     --color-lightblack: #454444;
 }
 
@@ -28,11 +27,29 @@ a {
 a:hover {
     opacity: 0.9;
 }
+.aikansh {
+    color: var(--color-link);
+}
 
 #main{
     width: 100%;
     min-height: 100vh;
-    background-color: var(--color-darkblack);
+    background-color: var(--color-bg);
+}
+
+.footer {
+    background-color: var(--color-bg);
+    font-size: 5rem;
+    min-height: 50vh;
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    padding: 4rem 0 2rem;
+    color: var(--color-airbase);
 }
 
 .nav{
@@ -63,7 +80,7 @@ a:hover {
     font-family: fontone;
     font-size: 1.5vw;
     letter-spacing: 0.1vw;
-    color: #454444;
+    color: var(--color-lightblack);
 }
 
 .content h1{
@@ -83,7 +100,7 @@ a:hover {
     width: 0.3vw;
     height: 0.3vw;
     border-radius: 50px;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--color-link);
 }
 
 .img-div{
@@ -92,13 +109,18 @@ a:hover {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    /* background-color: rgb(100, 183, 255); */
 }
 
 .img{
     width: 25vw;
     height: 50vh;
-    background-image: url(https://our-revolution.com/images/60a2bs0u/production/766deb96495612e023c032afeee001063af9026e-2880x1760.png?w=1920&q=100&fit=clip&auto=format);
+    background-image: linear-gradient(54deg,#fff2f5 -1%,#ebf3fd 74%);
     background-size: cover;
     background-position: center;
+    border-top-left-radius : 8px; 
+    border-top-right-radius: 8px;
+    border-bottom-left-radius : 8px;
+    border-bottom-right-radius: 8px; 
+    overflow: hidden; 
+    transform: scale(1.01); /*comment this out for intersection observer to work*/
 }

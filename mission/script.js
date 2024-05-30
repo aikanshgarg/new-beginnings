@@ -1,3 +1,5 @@
+// https://github.com/thesiyhbrand/scrolling-effect-2
+
 var tl = gsap.timeline({scrollTrigger:{
     trigger:"#main",
     // markers:true,
