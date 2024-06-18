@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const cards = [
         { id: "#card-1", endTranslateX: -2000, rotate: 45 },
         { id: "#card-2", endTranslateX: -1000, rotate: -30 },
-        { id: "#card-3", endTranslateX: -2000, rotate: 45 },
+        { id: "#card-3", endTranslateX: -2000, rotate: 25 },
         { id: "#card-4", endTranslateX: -1500, rotate: 30 },
     ];
 
